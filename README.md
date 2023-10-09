@@ -1,40 +1,39 @@
-# Vite project template by malinatrash!
+# SpotlightCard React Component with HOC and Tailwind CSS
 
-## Includes:
-1. React
-2. TypeScript
-3. Tailwind
-4.  Redux ToolKit
-5.  React-Router
+## Introduction
 
-## Motivation
-I have always been terribly excited every time I create a new project from scratch to deal with the configuration of all libraries and modules. Therefore, I am making for myself and for everyone a template for creating your web application on a modern stack!
+This project demonstrates a React component called SpotlightCard that utilizes Framer Motion for animation effects. The component is encapsulated within a Higher-Order Component (HOC) for better reusability and separation of concerns. It is also integrated with Tailwind CSS for rapid UI development and customization.
 
-## How to use
-1. Сlick use this template button 
-2. Create a new repository 
-3. Enter the repository name 
-4. Clone your repository to a local machine 
-5. Change the package.json for yourself 
-6. Get high
+## Installation
 
-## My links
+First, make sure you have Node.js and npm installed. Then, run the following command in the root directory of the project:
 
-<div align="center">
-<a href="https://github.com/malinatrash" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-</a>
-<a href="https://instagram.com/ashap.fnm" target="_blank">
-<img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-</a>
-<a href="https://codepen.com/malinatrash" target="_blank">
-<img src=https://img.shields.io/badge/codepen-%23131417.svg?&style=for-the-badge&logo=codepen&logoColor=white alt=codepen style="margin-bottom: 5px;" />
-</a>
-<a href="https://dribbble.com/malinatrash" target="_blank">
-<img src=https://img.shields.io/badge/dribbble-%23E45285.svg?&style=for-the-badge&logo=dribbble&logoColor=white alt=dribbble style="margin-bottom: 5px;" />
-</a>
-<a href="https://linkedin.com/in/malinatrash" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>  
-</div>
+```bash
+npm install
+```
+
+## Usage
+
+Import the TrackedSpotlightCard component into your React component. This is the SpotlightCard enhanced with mouse tracking functionality via
+a HOC:
+
+```jsx
+import { TrackedSpotlightCard } from "./path/to/TrackedSpotlightCard";
+```
+
+Then you can use this component in your JSX:
+
+```jsx
+<TrackedSpotlightCard />
+```
+
+### Props
+
+The SpotlightCard component accepts the following props:
+
+- mouseX: A MotionValue from Framer Motion that represents the X-coordinate of the mouse.
+- mouseY: A MotionValue from Framer Motion that represents the Y-coordinate of the mouse.
+
+### HOC
+
+The component uses a Higher-Order Component (HOC) called withMouseTracking to handle mouse movements. This design pattern allows for a cleaner and more modular code structure.
