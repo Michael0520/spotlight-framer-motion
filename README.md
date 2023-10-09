@@ -1,8 +1,9 @@
 # SpotlightCard React Component with HOC and Tailwind CSS
 
 ## Introduction
-
 This project demonstrates a React component called SpotlightCard that utilizes Framer Motion for animation effects. The component is encapsulated within a Higher-Order Component (HOC) for better reusability and separation of concerns. It is also integrated with Tailwind CSS for rapid UI development and customization.
+
+![CleanShot 2023-10-09 at 12 56 24](https://github.com/Michael0520/spotlight-framer-motion/assets/60827537/d157a514-0609-42d9-b46f-8f5ac0b90081)
 
 ## Installation
 
