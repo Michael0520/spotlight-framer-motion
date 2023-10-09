@@ -1,6 +1,6 @@
 import { MotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
-import { withMouseTracking } from "~/hooks/withMouseTracking";
+import { withMouseTracking } from "~/components/withMouseTracking";
 
 interface SpotlightCardProps {
   mouseX: MotionValue<number>;
